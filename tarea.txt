@@ -1,0 +1,113 @@
+Proyecto: ToDoCLI - Aplicación de Lista de Tareas por línea de comandos
+
+
+Descripción del Proyecto:
+
+Crear una aplicación de lista de tareas por línea de comandos (CLI) utilizando Node.js. Esta aplicación permitirá a los usuarios agregar tareas, listarlas, marcarlas como completadas y salir del programa cuando lo deseen.
+
+
+Paso 1: Configuración del Entorno de Desarrollo:
+
+Asegúrate de tener Node.js instalado en tu computadora.
+Crea un nuevo directorio para tu proyecto.
+Abre una terminal en ese directorio y ejecuta npm init -y o pnpm init para inicializar un nuevo proyecto de Node.js.
+Instala las dependencias necesarias ejecutando npm install readline chalk.
+Paso 2: Creación del Archivo Principal:
+
+Crea un archivo llamado app.js.
+Abre app.js en tu editor de código preferido.
+Paso 3: Importación de Módulos:
+
+Importa los módulos necesarios al inicio de tu archivo app.js:
+
+import { createInterface } from "readline";
+
+import chalk from "chalk";
+
+Paso 4: Definición de Variables:
+
+Define una variable tasks como un array vacío para almacenar las tareas.
+
+const tasks = [];
+
+Paso 5: Configuración de la Interfaz de Línea de Comandos (CLI):
+
+Crea una instancia de readline.Interface para manejar la entrada y salida del usuario.
+
+const rl = createInterface({
+
+  input: process.stdin,
+
+  output: process.stdout,
+
+});
+
+Paso 6: Definición de Funciones Principales:
+
+Define las siguientes funciones:
+
+displayMenu(): para mostrar el menú de opciones.
+addTask(): para agregar una nueva tarea.
+listsTasks(): para listar todas las tareas.
+completeTask(): para marcar una tarea como completada.
+chooseOption(): para manejar la selección de opciones por parte del usuario.
+
+// Función displayMenu()
+
+function displayMenu() {
+
+  // Implementación de la función displayMenu
+
+}
+
+
+// Función addTask()
+
+function addTask() {
+
+  // Implementación de la función addTask
+
+}
+
+
+// Función listsTasks()
+
+function listsTasks() {
+
+  // Implementación de la función listsTasks
+
+}
+
+
+// Función completeTask()
+
+function completeTask() {
+
+  // Implementación de la función completeTask
+
+}
+
+
+// Función chooseOption()
+
+function chooseOption() {
+
+  // Implementación de la función chooseOption
+
+}
+
+Paso 7: Implementación de la Lógica de las Funciones:
+
+Completa la implementación de cada función según el código proporcionado.
+Paso 8: Ejecución del Programa:
+
+Al final del archivo, llama a las funciones displayMenu() y chooseOption() para iniciar la aplicación.
+
+displayMenu();
+
+chooseOption();
+
+
+Paso 9: Ejecución y Pruebas:
+Ejecuta tu programa escribiendo node app.js en tu terminal.
+Prueba cada función para asegurarte de que la aplicación funcione según lo esperado.
